@@ -106,10 +106,10 @@ using namespace std;
 #define nxtperv(v)          (next_permutation(v.begin(),v.end()))                              /* sorted*/    
 #define preperv(v)          (prev_permutation(v.begin(),v.end()))                              /* sorted*/    
 
-#define intersect(v,v1,v2)  (v2.resize(set_intersection (v.begin(),v.end(),v1.begin(),v1.end(), v2.begin())-v2.begin()))               /* vector */ /* sorted*/
-#define diff(v,v1,v2)       (v2.resize(set_difference(v.begin(),v.end(),v1.begin(),v1.end(), v2.begin())-v2.begin()))                 /* vector */ /* sorted*/
-#define symmdiff(v,v1,v2)    (v2.resize(set_symmetric_difference(v.begin(),v.end(),v1.begin(),v1.end(), v2.begin())-v2.begin()))      /* vector */ /* sorted*/
-#define union(v,v1,v2)      (v2.resize(set_union(v.begin(),v.end(),v1.begin(),v1.end(), v2.begin())-v2.begin()))                    /* vector */ /* sorted*/
+#define intersect(v,v1,v2)  (v2.resize(set_intersection (v.begin(),v.end(),v1.begin(),v1.end(), v2.begin())-v2.begin()))               /* v2.size() /* sorted*/
+#define diff(v,v1,v2)       (v2.resize(set_difference(v.begin(),v.end(),v1.begin(),v1.end(), v2.begin())-v2.begin()))                 /* v2.size() /* sorted*/
+#define symmdiff(v,v1,v2)    (v2.resize(set_symmetric_difference(v.begin(),v.end(),v1.begin(),v1.end(), v2.begin())-v2.begin()))     /* v2.size() /* sorted*/
+#define union(v,v1,v2)      (v2.resize(set_union(v.begin(),v.end(),v1.begin(),v1.end(), v2.begin())-v2.begin()))                    /* v2.size() /* sorted*/
 
 #define replace(v,x,y)      (replace (v.begin(),v.end(),x,y))
 #define rev(v)              (reverse(v.begin(),v.end()))
